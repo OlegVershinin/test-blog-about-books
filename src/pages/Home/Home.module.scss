@@ -1,0 +1,36 @@
+@mixin typing_d($w) {
+    width: $w;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid;
+    font-size: 1em;
+
+}
+.typing_one {
+    @include typing_d(56ch)
+}
+
+.typing_two {
+    @include typing_d(54ch)
+}
+
+.typing_three {
+    @include typing_d(34ch)
+}
+
+.typing_four {
+    @include typing_d(46ch)
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}

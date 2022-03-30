@@ -1,0 +1,27 @@
+  .p {
+    position: relative;
+
+    font: 600 1em "Neuton";
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, rgb(99, 216, 236), rgb(243, 6, 6), rgb(15, 230, 51));
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 7s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  }
+
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+
+  .footer {
+    margin-top: auto;
+    background-color: #696969;
+  }
